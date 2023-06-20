@@ -1,6 +1,6 @@
 # SecurePassGen
 
-![SecurePassGen Logo](https://imgur.com/gXCBBAu)
+![SecurePassGen Logo](PassGen.jpeg)
 
 ## Descrição
 
