@@ -1,6 +1,6 @@
 # SecurePassGen
 
-![SecurePassGen Logo](PassGen128x128.jpeg)
+![SecurePassGen Logo](PassGen128x128.png)
 
 ## Descrição
 
