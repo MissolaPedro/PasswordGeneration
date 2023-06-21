@@ -31,12 +31,6 @@ Com o SecurePassGen, você pode criar senhas seguras de forma rápida e convenie
 3. Após a configuração das opções, o SecurePassGen irá gerar a senha e exibi-la na tela.
 4. A senha também será armazenada no arquivo "senhas.csv" para referência futura.
 
-## Contribuição
-
-Contribuições são bem-vindas! Se você tiver alguma ideia, sugestão ou correção, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-Antes de contribuir, certifique-se de seguir as diretrizes de contribuição do projeto.
-
 ## Licença
 
 Este projeto é licenciado sob a [MIT License](LICENSE). Sinta-se à vontade para usar, modificar e distribuir este software de acordo com os termos da licença.
