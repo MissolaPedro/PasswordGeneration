@@ -283,7 +283,7 @@ int main()
         printf("2 - Não\n");
         printf("Opção: ");
         scanf("%d", &option_unique);
-
+        
         while (true)
         {
             if (option_unique < 1 || option_unique > 2)
@@ -293,7 +293,7 @@ int main()
                 scanf("%i", &option_unique);
             }
 
-            if (option >= 1 && option <= 2)
+            if (option >= 1 && option <= 5)
             {
                 break;
             }
