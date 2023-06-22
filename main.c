@@ -255,6 +255,21 @@ int main()
         printf("Escolha uma opção: ");
         scanf("%d", &option);
 
+        while (true)
+        {
+            if (option < 1 || option > 5)
+            {
+                printf("\nOpção invalida");
+                printf("\nSelecione outra opção: ");
+                scanf("%i", &option);
+            }
+
+            if (option >= 1 && option <= 5)
+            {
+                break;
+            }
+        }
+
         if (option == 5)
         {
             printf("\nEncerrando o programa.\n");
@@ -268,17 +283,28 @@ int main()
         printf("Opção: ");
         scanf("%d", &option_unique);
 
+        if (option_unique == 1)
+        {
+            printf("\nNumero maximo de caracteres permitidos é 8");
+        }
+
         int size;
-        printf("Informe quantos caracteres deseja para a senha: ");
+        printf("\nInforme quantos caracteres deseja para a senha: ");
         scanf("%d", &size);
+
+        if (option_unique == 1 && size > 8)
+        {
+            printf("\nNumero de carecters excedido");
+            printf("\nRedefinindo o tamanho da senha para 8");
+            size = 8;
+        }
 
         char password[size + 1];
         memset(password, 0, sizeof(password));
-        
 
         FILE *senhaFile = fopen("senhas.csv", "a");
         generatePassword(size, option, password, option_unique);
-        printf("Senha gerada: %s\n\n", password);
+        printf("\nSenha gerada: %s\n\n", password);
         fprintf(senhaFile, "\n%s", password);
         fclose(senhaFile);
     }
