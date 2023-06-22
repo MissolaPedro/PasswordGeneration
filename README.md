@@ -33,4 +33,4 @@ Com o SecurePassGen, você pode criar senhas seguras de forma rápida e convenie
 
 ## Licença
 
-Este projeto é licenciado sob a [MIT License](LICENSE). Sinta-se à vontade para usar, modificar e distribuir este software de acordo com os termos da licença.
+Este projeto é licenciado sob a [APACHE License 2.0](LICENSE). Sinta-se à vontade para usar, modificar e distribuir este software de acordo com os termos da licença.
