@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -283,6 +284,21 @@ int main()
         printf("Opção: ");
         scanf("%d", &option_unique);
 
+        while (true)
+        {
+            if (option_unique < 1 || option_unique > 2)
+            {
+                printf("\nOpção invalida");
+                printf("\nSelecione outra opção: ");
+                scanf("%i", &option_unique);
+            }
+
+            if (option >= 1 && option <= 2)
+            {
+                break;
+            }
+        }
+
         if (option_unique == 1)
         {
             printf("\nNumero maximo de caracteres permitidos é 8");
@@ -304,7 +320,7 @@ int main()
 
         FILE *senhaFile = fopen("senhas.csv", "a");
         generatePassword(size, option, password, option_unique);
-        printf("\nSenha gerada: %s\n\n", password);
+        printf("\nSenha gerada: %s\n\n\n", password);
         fprintf(senhaFile, "\n%s", password);
         fclose(senhaFile);
     }
