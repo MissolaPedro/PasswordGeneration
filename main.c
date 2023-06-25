@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -283,7 +282,7 @@ int main()
         printf("2 - Não\n");
         printf("Opção: ");
         scanf("%d", &option_unique);
-        
+
         while (true)
         {
             if (option_unique < 1 || option_unique > 2)
